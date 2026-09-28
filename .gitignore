@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 ﻿node_modules/
 **/node_modules/
 .venv/
 venv/
+=======
+﻿.venv/
+venv/
+**/ .venv/
+**/ venv/
+>>>>>>> 1689ecf62c67372605f83f8abe5e9933c352b766
 __pycache__/
 *.pyc

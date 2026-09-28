@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1689ecf62c67372605f83f8abe5e9933c352b766
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -25,7 +28,11 @@
     <a href="aba_d.html" style="text-decoration: none; color: #333; font-weight: bold;">Recomendações</a>
   </nav>
 
+<<<<<<< HEAD
   <!-- ÁREA LOGIN (BOTÃO QUE LEVA PARA login.html) -->
+=======
+  <!-- ÁREA LOGIN -->
+>>>>>>> 1689ecf62c67372605f83f8abe5e9933c352b766
   <div class="area-login" style="display: flex; align-items: center; gap: 10px;">
     <span class="texto-login" style="font-size: 14px; color: #666;">Conecte-se aqui</span>
     <a href="login.html" class="btn-login" style="background: #007bff; color: white; padding: 8px 15px; border-radius: 4px; text-decoration: none; font-weight: bold;">Login</a>
@@ -88,7 +95,11 @@
   <h2>Funcionalidades</h2>
 
   <div class="cards">
+<<<<<<< HEAD
     <!-- Card Monitoramento -->
+=======
+    <!-- Card Monitoramento (Apontando para aba_a.html) -->
+>>>>>>> 1689ecf62c67372605f83f8abe5e9933c352b766
     <a href="aba_a.html" class="card-link" style="text-decoration: none; color: inherit;">
       <div class="card">
         <div class="icone">📊</div>
@@ -97,7 +108,11 @@
       </div>
     </a>
 
+<<<<<<< HEAD
     <!-- Card Localização -->
+=======
+    <!-- Card Localização (Link direto para o Google Maps em Saquarema) -->
+>>>>>>> 1689ecf62c67372605f83f8abe5e9933c352b766
     <a href="https://www.google.com/maps/search/hospitais+e+unidades+de+saude+Saquarema+RJ" target="_blank" class="card-link" style="text-decoration: none; color: inherit;">
       <div class="card">
         <div class="icone">📍</div>
@@ -106,12 +121,20 @@
       </div>
     </a>
 
+<<<<<<< HEAD
     <!-- Card Agendamento -->
+=======
+    <!-- Card Agendamento com seleção do hospital -->
+>>>>>>> 1689ecf62c67372605f83f8abe5e9933c352b766
     <div class="card card-interativo">
       <div class="icone">📅</div>
       <h3>Agendamento</h3>
       <p>Organize consultas informando a unidade de atendimento:</p>
       
+<<<<<<< HEAD
+=======
+      <!-- Menu Dropdown para escolha dos hospitais -->
+>>>>>>> 1689ecf62c67372605f83f8abe5e9933c352b766
       <label for="hospital" style="font-size: 13px; color: #555; display: block; margin-top: 8px; text-align: left; font-weight: bold;">Unidade:</label>
       <select id="hospital" required style="width: 100%; padding: 8px; margin-top: 4px; margin-bottom: 8px; border-radius: 4px; border: 1px solid #ccc; font-size: 14px; box-sizing: border-box;">
         <option value="" disabled selected>-- Clique aqui para escolher --</option>
@@ -186,16 +209,28 @@
       <h3>Para mais informações</h3>
       <p>Entre em contato com a nossa equipe</p>
 
+<<<<<<< HEAD
+=======
+      <!-- WhatsApp Principal -->
+>>>>>>> 1689ecf62c67372605f83f8abe5e9933c352b766
       <p class="whatsapp">
         <img src="icons/whatsapp.png" alt="WhatsApp">
         <a href="https://wa.me/5522992049923" target="_blank" style="color: white; text-decoration: none;">(22) 99204-9923</a>
       </p>
 
+<<<<<<< HEAD
+=======
+      <!-- E-mail Principal -->
+>>>>>>> 1689ecf62c67372605f83f8abe5e9933c352b766
       <p class="email">
         <img src="icons/email.png" alt="E-mail">
         <a href="mailto:saude@saquarema.rj.gov.br" style="color: white; text-decoration: none;">saude@saquarema.rj.gov.br</a>
       </p>
 
+<<<<<<< HEAD
+=======
+      <!-- Ouvidoria Geral do Município -->
+>>>>>>> 1689ecf62c67372605f83f8abe5e9933c352b766
       <p class="ouvidoria" style="margin-top: 10px; font-size: 14px;">
         <strong>Ouvidoria Geral do Município:</strong><br>
         Telefone: <a href="tel:552226556401" style="color: white; text-decoration: none;">(22) 2655-6401</a><br>
@@ -229,10 +264,20 @@ function mudarSlide(direcao) {
   const img = document.getElementById("imgSlide");
 
   slides[slideAtual].classList.remove("ativo");
+<<<<<<< HEAD
   slideAtual = (slideAtual + direcao + slides.length) % slides.length;
   slides[slideAtual].classList.add("ativo");
 
   img.style.opacity = 0;
+=======
+
+  slideAtual = (slideAtual + direcao + slides.length) % slides.length;
+
+  slides[slideAtual].classList.add("ativo");
+
+  img.style.opacity = 0;
+
+>>>>>>> 1689ecf62c67372605f83f8abe5e9933c352b766
   setTimeout(() => {
     img.src = imagens[slideAtual];
     img.style.opacity = 1;
@@ -250,7 +295,11 @@ window.addEventListener("scroll", () => {
   }
 });
 
+<<<<<<< HEAD
 // Evento do botão de Emergência para Hipertensos em Saquarema
+=======
+// Evento do novo botão de Emergência para Hipertensos em Saquarema
+>>>>>>> 1689ecf62c67372605f83f8abe5e9933c352b766
 document.getElementById("btnHipertensos").addEventListener("click", function() {
   const residente = confirm("Confirma que é residente no município de Saquarema - RJ e necessita de atendimento de emergência para hipertensão?");
   
@@ -261,7 +310,11 @@ document.getElementById("btnHipertensos").addEventListener("click", function() {
   }
 });
 
+<<<<<<< HEAD
 // Função para registrar o hospital selecionado e avançar para o agendamento
+=======
+// Função atualizada para registrar o hospital selecionado e avançar para o agendamento
+>>>>>>> 1689ecf62c67372605f83f8abe5e9933c352b766
 function irParaAgendamento() {
   const selectHospital = document.getElementById("hospital");
   const hospital = selectHospital.value;
